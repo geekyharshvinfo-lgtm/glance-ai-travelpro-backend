@@ -167,6 +167,12 @@ POSE & ENERGY:
 - Body language: effortlessly stylish, like someone who travels this well every time
 - NOT a static passport photo stance — give it life
 
+BODY & ANATOMY (CRITICAL — DO NOT FAIL THIS):
+- The body must be ONE single, anatomically correct, naturally proportioned human. Head, torso, hips, and legs must connect seamlessly and face the SAME consistent direction with a natural, believable posture.
+- The upper body and lower body MUST belong to the same person and be aligned — do NOT split, twist, duplicate, mismatch, or offset the torso and legs. No disconnected, floating, or contradictory limbs.
+- Correct human proportions: realistic arm/leg length, normal number of fingers, hands, feet, and joints. No extra or missing limbs, no warped or bent anatomy.
+- The pose must be physically plausible and read as a real photograph of a whole, coherent person standing or walking naturally.
+
 COMPOSITION:
 - Subject slightly off-center — rule of thirds; the location breathes around them
 - Shallow depth of field: subject + bag razor sharp, background beautifully blurred but still recognizable as ${loc.place}
@@ -190,7 +196,8 @@ ABSOLUTE PRESERVATION RULES — NEVER VIOLATE:
 2. HAIR: Exact same style, color, and texture.
 3. BAG: Exact same product — same color, logo, design details as shown in Image 2. No creative reinterpretation.
 4. PHOTOREALISM: Must look like a real photograph taken on location with a high-end camera. Not CGI, not illustration, not composite.
-5. NO TEXT, watermarks, brand overlays, or graphic elements anywhere in the image.
+5. BODY: One coherent person — upper and lower body aligned and connected, natural proportions, no split/duplicated/warped anatomy.
+6. NO TEXT, watermarks, brand overlays, or graphic elements anywhere in the image.
 
 Output: One breathtaking, campaign-ready luxury travel photograph.`;
 }
@@ -224,6 +231,12 @@ COMPOSITION:
 - Person slightly off-center, rule of thirds; the iconic Cannes backdrop breathes around them
 - Shoot from slightly below eye level — gives an aspirational, editorial magazine-cover energy
 
+BODY & ANATOMY (CRITICAL — DO NOT FAIL THIS):
+- The body must be ONE single, anatomically correct, naturally proportioned human. Head, torso, hips, and legs connect seamlessly and face the SAME consistent direction with a natural posture.
+- The upper body and lower body MUST belong to the same person and be aligned — do NOT split, twist, duplicate, mismatch, or offset the torso and legs. No disconnected, floating, or contradictory limbs.
+- Correct human proportions: realistic arm/leg length, normal hands, fingers, and feet. No extra or missing limbs, no warped anatomy.
+- The full-length pose must be physically plausible and read as a real photograph of one whole, coherent person.
+
 OUTFIT: Light, breathable hot-summer Riviera wear — a crisp white short-sleeve linen shirt or airy summer top, perfectly tailored stone or beige lightweight trousers or shorts, leather sandals or loafers, oversized designer sunglasses, a fine watch. Sharp, effortless, cool for the heat. NO jacket, blazer, coat, or knitwear.
 
 BAGS: The TravelPro luggage must be clearly visible, sharp, and faithfully reproduced with exact colors, logos, and design details from the product images — a true co-hero of this image, positioned beautifully beside the subject.
@@ -237,7 +250,8 @@ ABSOLUTE PRESERVATION RULES:
 2. HAIR: Identical.
 3. ALL BAGS: Exact colors, logos, and designs as product images.
 4. PHOTOREALISM: Real photograph quality — high-end camera, shot on location.
-5. NO text, watermarks, or graphic additions.
+5. BODY: One coherent person — upper and lower body aligned and connected, natural proportions, no split/duplicated/warped anatomy.
+6. NO text, watermarks, or graphic additions.
 
 Output: One iconic, campaign-defining hero travel photograph.`;
 }
@@ -274,6 +288,12 @@ COMPOSITION — WIDER ENVIRONMENTAL SHOT:
 - Slight low angle for editorial lift; subject roughly centered or rule-of-thirds
 - Depth of field: subject + bag sharp, background richly blurred but location still readable
 
+BODY & ANATOMY (CRITICAL — DO NOT FAIL THIS):
+- The body must be ONE single, anatomically correct, naturally proportioned human. Head, torso, hips, and legs connect seamlessly and face the SAME consistent direction with a natural posture.
+- The upper body and lower body MUST belong to the same person and be aligned — do NOT split, twist, duplicate, mismatch, or offset the torso and legs. No disconnected, floating, or contradictory limbs.
+- Correct human proportions: realistic arm/leg length, normal hands, fingers, and feet. No extra or missing limbs, no warped anatomy.
+- The full-length pose must be physically plausible and read as a real photograph of one whole, coherent person.
+
 LIGHTING: Brilliant natural daylight — crisp specular on the bag, clean catchlights in the eyes, warm directional Mediterranean sun.
 
 OUTFIT: ${theme.styling}
@@ -285,7 +305,8 @@ ABSOLUTE PRESERVATION RULES:
 2. HAIR: Identical style and color.
 3. BAG: Exact same product — same color and design as Image 2.
 4. PHOTOREALISM: Real photograph. Not CGI or illustration.
-5. NO text, watermarks, or overlays.
+5. BODY: One coherent person — upper and lower body aligned and connected, natural proportions, no split/duplicated/warped anatomy.
+6. NO text, watermarks, or overlays.
 
 Output: One stunning, wide editorial travel photograph.`;
 }
