@@ -146,11 +146,14 @@ WEATHER: It is a HOT Cannes summer heatwave. The subject must wear light, breath
 
 YOUR MISSION: Create a single, jaw-dropping editorial travel photograph that could run as a double-page spread in Condé Nast Traveller, Vogue Travel, or a TravelPro global campaign. This image must stop the scroll.
 
-SUBJECT — FACE & IDENTITY (CRITICAL):
-- Reproduce the person's face with absolute pixel-perfect accuracy: same bone structure, same eye shape and color, same nose, same lips, same skin tone and texture
-- Same hair — identical style, length, color, and how it falls
-- This is NOT a stylized version. This is the exact same person, photographed on location.
-- Their expression: confident, relaxed, naturally in the moment — not posed stiffly
+SUBJECT — FACE & IDENTITY (MOST CRITICAL REQUIREMENT — DO NOT FAIL THIS):
+- The face in the OUTPUT must be the EXACT SAME FACE as the person in Image 1 — not similar, not inspired by, but IDENTICAL, as if you cut out their real face and placed it into the scene.
+- Preserve with pixel-perfect, forensic accuracy: exact bone structure, exact face shape and jawline, exact eye shape, exact eye color, exact eyebrows, exact nose shape, exact lips, exact skin tone, exact skin texture, freckles/marks, and exact age.
+- Do NOT beautify, slim, smooth, lighten, age, de-age, or "improve" the face in any way. Do NOT make it more conventionally attractive. Keep every real feature exactly as in Image 1.
+- Same hair — identical style, length, color, parting, and how it falls.
+- If you cannot place the identical face, prioritize face identity over everything else (pose, lighting, composition can flex — the face cannot).
+- This is NOT a stylized or AI-imagined version. It is a photograph of THIS exact real person on location.
+- Their expression: confident, relaxed, naturally in the moment — but the underlying face/identity stays 100% theirs.
 
 PRODUCT PLACEMENT:
 - The TravelPro "${productName}" is the CO-HERO of this image — not a prop, not an afterthought
@@ -205,11 +208,14 @@ WEATHER: It is a HOT, glorious Cannes summer heatwave. The subject wears light, 
 
 TASK: Create the single most beautiful, ultra-high-quality TravelPro Riviera hero shot imaginable — a full-spread luxury campaign image of this exact person, visibly happy and joyfully enjoying their dream Riviera vacation, with a TravelPro bag at their side on La Croisette. This is the image the entire store opens with: it must be breathtaking, premium, and aspirational at the highest level.
 
-SUBJECT — FACE & IDENTITY (CRITICAL):
-- Reproduce this person's face with 100% accuracy: exact bone structure, eye shape, eye color, nose, lips, skin tone, skin texture
-- Exact same hair — identical style, color, length, how it falls
+SUBJECT — FACE & IDENTITY (MOST CRITICAL REQUIREMENT — DO NOT FAIL THIS):
+- The output face must be the EXACT SAME FACE as Image 1 — identical, as if their real face was placed into this scene. Not similar, not idealized — the same person.
+- Preserve with forensic accuracy: exact bone structure, face shape, jawline, eye shape, eye colour, eyebrows, nose, lips, skin tone, skin texture, marks, and age.
+- Do NOT beautify, slim, smooth, lighten, age, or de-age the face. Keep every real feature exactly as in Image 1.
+- Exact same hair — identical style, colour, length, and how it falls.
+- Prioritize face identity above all else — the face cannot deviate, even slightly.
 - They are a real person being photographed in Cannes. Not illustrated. Not stylized. Identical.
-- Expression: genuinely happy and radiant — a warm natural smile, relaxed and clearly enjoying a wonderful summer vacation
+- Expression: genuinely happy and radiant — a warm natural smile, relaxed and clearly enjoying a wonderful summer vacation — while the underlying face stays 100% theirs.
 
 COMPOSITION:
 - Full-length shot — the person commanding the frame, bags arranged naturally at their sides and behind
@@ -249,11 +255,13 @@ WEATHER: It is a HOT Cannes summer heatwave. The subject must wear light, breath
 
 TASK: Create a stunning wide editorial travel photograph where both the person AND the location are heroes. Think travel magazine cover meets luxury brand campaign.
 
-SUBJECT — FACE & IDENTITY (CRITICAL):
-- Reproduce this person's face with complete accuracy: same features, same eye shape and colour, same nose and lips, same skin tone
-- Exact same hair — same style, colour, and texture
-- Same person. No stylization. Identical.
-- Pose: natural, mid-movement — confident stride, hand on bag, looking ahead or glancing toward camera with ease
+SUBJECT — FACE & IDENTITY (MOST CRITICAL REQUIREMENT — DO NOT FAIL THIS):
+- The output face must be the EXACT SAME FACE as Image 1 — identical, as if their real face was placed into this scene. Not similar, not inspired by — the same person.
+- Preserve with forensic accuracy: exact bone structure, face shape, jawline, eye shape and colour, eyebrows, nose, lips, skin tone, skin texture, marks, and age.
+- Do NOT beautify, slim, smooth, lighten, age, or de-age the face. Keep every real feature exactly as in Image 1.
+- Exact same hair — same style, colour, length, and texture.
+- Prioritize face identity above pose, lighting, and composition. The face cannot deviate.
+- Pose: natural, mid-movement — confident stride, hand on bag, looking ahead or glancing toward camera with ease — but the face/identity stays 100% theirs.
 
 PRODUCT:
 - The TravelPro "${productName}" is prominently featured — same exact color, logo, design details as Image 2
