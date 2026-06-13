@@ -1,164 +1,192 @@
 {
   "collections": [
     {
-      "id": "platinum-elite",
-      "name": "Platinum® Elite",
-      "tagline": "Award-winning style, traveler-approved performance.",
+      "id": "yacht-weekend",
+      "name": "The Yacht Weekend",
+      "tagline": "Sophisticated coastal leisure.",
+      "uiStyle": "grid",
       "products": [
         {
-          "id": "pe-21",
-          "name": "Platinum Elite Carry-On Spinner",
+          "id": "yw-1",
+          "name": "Altitude Day-to-Day Duffel",
+          "price": "$250",
+          "category": "The Yacht Weekend",
+          "size": "Duffel",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0080/0984/2786/files/430248949_1.jpg?v=1744041067",
+          "description": "Deck-to-dock in sophisticated style.",
+          "redirectUrl": "https://www.travelpro.com/products/travelpro%C2%AE-altitude%E2%84%A2-day-to-day-duffel"
+        },
+        {
+          "id": "yw-2",
+          "name": "TL Large Check-In Trunk Spinner",
+          "price": "$695",
+          "category": "The Yacht Weekend",
+          "size": "Large Check-In",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0080/0984/2786/files/404199908_front-1200x1200-bd93c0f-min.jpg?v=1741186255",
+          "description": "The grand trunk for the long weekend.",
+          "redirectUrl": "https://www.travelpro.com/products/travelpro-x-travel-leisure-large-check-in-trunk-spinner"
+        },
+        {
+          "id": "yw-3",
+          "name": "TL Carry-On Spinner",
+          "price": "$545",
+          "category": "The Yacht Weekend",
+          "size": "Carry-On",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0080/0984/2786/files/404199026_front_9d411f95-e8c2-4a97-9644-18ea03887b68.jpg?v=1775757022",
+          "description": "Premium carry-on for marina mornings.",
+          "redirectUrl": "https://www.travelpro.com/products/travelpro-x-travel-leisure-carry-on-expandable-spinner"
+        }
+      ]
+    },
+    {
+      "id": "cannes-riviera",
+      "name": "La Croisette",
+      "tagline": "Effortless luxury along the Riviera.",
+      "uiStyle": "editorial",
+      "products": [
+        {
+          "id": "cr-1",
+          "name": "Platinum Elite International Carry-On Spinner",
           "price": "$390",
-          "category": "Platinum® Elite",
-          "size": "Carry-On",
-          "imageUrl": "https://cdn.shopify.com/s/files/1/0080/0984/2786/files/409186146_1_f106c1d2-8fad-4fdb-b200-a860a65fcbdf.webp",
-          "description": "The ultimate carry-on. Heritage Black.",
-          "redirectUrl": "https://www.travelpro.com/products/platinum%C2%AE-elite-21-expandable-carry-on-spinner"
+          "category": "La Croisette",
+          "size": "International Carry-On",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0080/0984/2786/files/travelpro-platinum-elite-international-carry-on-spinner-shadow-black-hero-front-409186701-1.jpg?v=1777045511",
+          "description": "Polished luggage for La Croisette arrivals.",
+          "redirectUrl": "https://www.travelpro.com/products/platinum%C2%AE-elite-international-expandable-carry-on-spinner"
         },
         {
-          "id": "pe-25",
-          "name": "Platinum Elite Medium Spinner",
-          "price": "$450",
-          "category": "Platinum® Elite",
-          "size": "Medium Check-In",
-          "imageUrl": "https://cdn.shopify.com/s/files/1/0080/0984/2786/files/409186546_1_53b7c181-0e8d-495d-ae88-07fea88c5d63.webp",
-          "description": "Award-winning design. Shadow Black.",
-          "redirectUrl": "https://www.travelpro.com/products/platinum%C2%AE-elite-25-expandable-spinner"
+          "id": "cr-2",
+          "name": "TL Drop-Bottom Weekender",
+          "price": "$375",
+          "category": "La Croisette",
+          "size": "Weekender",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0080/0984/2786/files/404194913_front-1500x1500-f3a2c67.jpg?v=1743619304",
+          "description": "An elegant weekender for the Riviera set.",
+          "redirectUrl": "https://www.travelpro.com/products/travelpro-x-travel-leisure-drop-bottom-weekender"
+        },
+        {
+          "id": "cr-3",
+          "name": "Platinum Elite UnderSeat Tote",
+          "price": "$215",
+          "category": "La Croisette",
+          "size": "Underseat Tote",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0080/0984/2786/files/travelpro-platinum-elite-underseat-tote-true-navy-hero-front-409240322-1.jpg?v=1776955840",
+          "description": "Effortless luxury, carried in hand.",
+          "redirectUrl": "https://www.travelpro.com/products/platinum%C2%AE-elite-underseat-tote"
         }
       ]
     },
     {
-      "id": "platinum-elite-hardside",
-      "name": "Platinum® Elite Hardside",
-      "tagline": "The tougher side of sophisticated.",
+      "id": "weekend-getaway",
+      "name": "Riviera Bound",
+      "tagline": "Scenic drives, cafes, and vineyard visits.",
+      "uiStyle": "grid",
       "products": [
         {
-          "id": "peh-23",
-          "name": "Platinum Elite Hardside Carry-On",
-          "price": "$365",
-          "category": "Platinum® Elite Hardside",
+          "id": "wg-1",
+          "name": "Crew Classic Carry-On Rollaboard",
+          "price": "$255",
+          "category": "Riviera Bound",
           "size": "Carry-On",
-          "imageUrl": "https://cdn.shopify.com/s/files/1/0080/0984/2786/files/travelpro-platinum-elite-hardside-carry-on-spinner-dark-sky-blue-front-view-409269102-1.jpg",
-          "description": "Ultra-durable shell. Dark Sky Blue.",
-          "redirectUrl": "https://www.travelpro.com/products/platinum-elite-hardside-carry-on-expandable-luggage-hardside-spinner-suitcase"
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0080/0984/2786/files/407242205_01_8fb97657-a21b-4dc2-a44c-c5bc6bfbf150.jpg?v=1775507062",
+          "description": "A classic roll for scenic drives.",
+          "redirectUrl": "https://www.travelpro.com/products/crew%E2%84%A2-classic-carry-on-rollaboard"
         },
         {
-          "id": "peh-23-black",
-          "name": "Platinum Elite Hardside Carry-On",
-          "price": "$365",
-          "category": "Platinum® Elite Hardside",
-          "size": "Carry-On",
-          "imageUrl": "https://cdn.shopify.com/s/files/1/0080/0984/2786/files/travelpro-platinum-elite-hardside-carry-on-spinner-jet-black-front-view-409269101-1.jpg",
-          "description": "Ultra-durable shell. Jet Black.",
-          "redirectUrl": "https://www.travelpro.com/products/platinum-elite-hardside-carry-on-expandable-luggage-hardside-spinner-suitcase"
-        }
-      ]
-    },
-    {
-      "id": "optima",
-      "name": "Optima®",
-      "tagline": "Refined resilience that's built to bounce back.",
-      "products": [
-        {
-          "id": "opt-co-black",
-          "name": "Optima Carry-On Spinner",
-          "price": "$260",
-          "category": "Optima®",
-          "size": "Carry-On",
-          "imageUrl": "https://cdn.shopify.com/s/files/1/0080/0984/2786/files/488259101_1.jpg",
-          "description": "Built to bounce back. Black.",
-          "redirectUrl": "https://www.travelpro.com/products/travelpro-optima-expandable-carry-on-hardside-spinner-suitcase"
-        },
-        {
-          "id": "opt-med-blue",
-          "name": "Optima Medium Check-In Spinner",
-          "price": "$295",
-          "category": "Optima®",
-          "size": "Medium Check-In",
-          "imageUrl": "https://cdn.shopify.com/s/files/1/0080/0984/2786/files/488259501_2.jpg",
-          "description": "Resilient hardside shell. Horizon Blue.",
-          "redirectUrl": "https://www.travelpro.com/products/travelpro-optima-expandable-expandable-medium-check-in-hardside-spinner-suitcase"
-        }
-      ]
-    },
-    {
-      "id": "versapack",
-      "name": "VersaPack®+",
-      "tagline": "Pack smarter, adapt effortlessly.",
-      "products": [
-        {
-          "id": "vp-co-sage",
-          "name": "VersaPack+ Carry-On Spinner",
-          "price": "$325",
-          "category": "VersaPack®+",
-          "size": "Carry-On",
-          "imageUrl": "https://cdn.shopify.com/s/files/1/0080/0984/2786/files/417246206__1.jpg",
-          "description": "Modular packing system. Desert Sage Green.",
-          "redirectUrl": "https://www.travelpro.com/products/versapack%C2%AE-carry-on-expandable-softside-spinner"
-        },
-        {
-          "id": "vp-med-blue",
-          "name": "VersaPack+ Medium Check-In Spinner",
-          "price": "$370",
-          "category": "VersaPack®+",
-          "size": "Medium Check-In",
-          "imageUrl": "https://cdn.shopify.com/s/files/1/0080/0984/2786/files/417246502-versapack-plus-medium-blue-spinner-check-in.jpg",
-          "description": "Smart compartments. Estate Blue.",
-          "redirectUrl": "https://www.travelpro.com/products/versapack%C2%AE-medium-check-in-expandable-softside-spinner"
-        }
-      ]
-    },
-    {
-      "id": "maxlite-softside",
-      "name": "Maxlite® Softside",
-      "tagline": "Everything you need, nothing you don't.",
-      "products": [
-        {
-          "id": "ml5-21-black",
-          "name": "Maxlite 5 Carry-On Spinner",
-          "price": "$160",
-          "category": "Maxlite® Softside",
-          "size": "Carry-On",
-          "imageUrl": "https://cdn.shopify.com/s/files/1/0080/0984/2786/files/401176101_3b650f9d-0c7c-4ded-b5cd-53af3a062809.jpg",
-          "description": "The lightest softside carry-on. Black.",
-          "redirectUrl": "https://www.travelpro.com/products/maxlite%C2%AE-5-21-expandable-carry-on-spinner"
-        },
-        {
-          "id": "ml5-25-pink",
-          "name": "Maxlite 5 Medium Check-In Spinner",
+          "id": "wg-2",
+          "name": "Bold 25 Expandable Rollaboard",
           "price": "$195",
-          "category": "Maxlite® Softside",
+          "category": "Riviera Bound",
           "size": "Medium Check-In",
-          "imageUrl": "https://cdn.shopify.com/s/files/1/0080/0984/2786/files/401176547_-1500x1500-f3a2c67_94316a1b-fd70-4136-aa37-1b76ead96170.jpg",
-          "description": "Lightweight and durable. Orchid Pink.",
-          "redirectUrl": "https://www.travelpro.com/products/maxlite%C2%AE-5-25-expandable-spinner"
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0080/0984/2786/files/412152502_2e1f2f97-f133-47af-bb35-7a3eaf88c343.jpg?v=1772657295",
+          "description": "Bold and ready for the vineyard run.",
+          "redirectUrl": "https://www.travelpro.com/products/bold%E2%84%A2-by-travelpro%C2%AE-25-expandable-rollaboard"
+        },
+        {
+          "id": "wg-3",
+          "name": "TL Compact Carry-On Spinner",
+          "price": "$525",
+          "category": "Riviera Bound",
+          "size": "Compact Carry-On",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0080/0984/2786/files/travelpro-travel-leisure-compact-carry-on-spinner-astro-dust-red-front-404199008.jpg?v=1776189405",
+          "description": "Compact luxury for cafe-hopping.",
+          "redirectUrl": "https://www.travelpro.com/products/travelpro-x-travel-leisure-compact-carry-on-expandable-spinner"
         }
       ]
     },
     {
-      "id": "maxlite-air-v2",
-      "name": "Maxlite® Air V2",
-      "tagline": "Light on weight, heavy on protection.",
+      "id": "mediterranean-escape",
+      "name": "Azure Days",
+      "tagline": "Relaxed, sun-soaked, and entirely effortless.",
+      "uiStyle": "editorial",
       "products": [
         {
-          "id": "mla-co-black",
-          "name": "Maxlite Air V2 Carry-On Spinner",
-          "price": "$210",
-          "category": "Maxlite® Air V2",
+          "id": "me-1",
+          "name": "Platinum Elite Carry-On Spinner Tote (USB-A Port Only)",
+          "price": "$279",
+          "category": "Azure Days",
+          "size": "Carry-On Tote",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0080/0984/2786/files/409181305_12.jpg?v=1775567887",
+          "description": "Vacation-ready, charge-as-you-go.",
+          "redirectUrl": "https://www.travelpro.com/products/platinum%C2%AE-elite-carry-on-spinner-tote-usb-a-port-only"
+        },
+        {
+          "id": "me-2",
+          "name": "Maxlite Air V2 Carry-On Hardside Spinner",
+          "price": "$160",
+          "category": "Azure Days",
           "size": "Carry-On",
-          "imageUrl": "https://cdn.shopify.com/s/files/1/0080/0984/2786/files/401259147_1_76c3e7d6-6de5-4bcc-9e66-72a3f33ec620.jpg",
-          "description": "Featherlight hardside. Black.",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0080/0984/2786/files/401259147_1_76c3e7d6-6de5-4bcc-9e66-72a3f33ec620.jpg?v=1775756919",
+          "description": "Light as the sea breeze.",
           "redirectUrl": "https://www.travelpro.com/products/maxlite%C2%AE-air-v2-carry-on-hardside-spinner"
         },
         {
-          "id": "mla-med-teal",
-          "name": "Maxlite Air V2 Medium Check-In Spinner",
-          "price": "$245",
-          "category": "Maxlite® Air V2",
+          "id": "me-3",
+          "name": "Altitude Sling 2L",
+          "price": "$120",
+          "category": "Azure Days",
+          "size": "Sling 2L",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0080/0984/2786/files/430248501_1.jpg?v=1766087604",
+          "description": "Hands-free for the coastal stroll.",
+          "redirectUrl": "https://www.travelpro.com/products/travelpro%C2%AE-altitude%E2%84%A2-sling-2l"
+        }
+      ]
+    },
+    {
+      "id": "business-traveller",
+      "name": "The Business Edit",
+      "tagline": "Conference-ready with a touch of Riviera sophistication.",
+      "uiStyle": "grid",
+      "products": [
+        {
+          "id": "bt-1",
+          "name": "Optima Expandable Medium Check-in Spinner",
+          "price": "$310",
+          "category": "The Business Edit",
           "size": "Medium Check-In",
-          "imageUrl": "https://cdn.shopify.com/s/files/1/0080/0984/2786/files/401259512_1.jpg",
-          "description": "Lightest hardside checked bag. Teal.",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0080/0984/2786/files/488259501_1.jpg?v=1770746950",
+          "description": "Refined resilience for the conference circuit.",
+          "redirectUrl": "https://www.travelpro.com/products/travelpro-optima-expandable-expandable-medium-check-in-hardside-spinner-suitcase"
+        },
+        {
+          "id": "bt-2",
+          "name": "Maxlite Air V2 Medium Check-In Hardside Spinner",
+          "price": "$195",
+          "category": "The Business Edit",
+          "size": "Medium Check-In",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0080/0984/2786/files/401259512_1.jpg?v=1774534274",
+          "description": "Lightweight protection for the working trip.",
           "redirectUrl": "https://www.travelpro.com/products/maxlite%C2%AE-air-v2-medium-check-in-hardside-spinner"
+        },
+        {
+          "id": "bt-3",
+          "name": "Platinum Elite Large Check-In Spinner - Camouflage",
+          "price": "$495",
+          "category": "The Business Edit",
+          "size": "Large Check-In",
+          "imageUrl": "https://cdn.shopify.com/s/files/1/0080/0984/2786/files/40918694444_1.jpg?v=1733328190",
+          "description": "Executive presence, distinctive finish.",
+          "redirectUrl": "https://www.travelpro.com/products/platinum%C2%AE-elite-large-check-in-spinner-camouflage"
         }
       ]
     }
