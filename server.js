@@ -70,7 +70,8 @@ async function toBase64(url) {
 // (rotated by product index) so the 3 products in a collection don't look identical.
 const RIVIERA_THEMES = {
   'cannes-riviera': {
-    styling: 'crisp white or pastel linen short-sleeve shirt or breezy blouse, lightweight tailored shorts or flowing trousers, leather sandals or minimalist sneakers, designer sunglasses and a refined watch — light, airy hot-summer fabrics, absolutely NO jacket, blazer, or knitwear',
+    male: 'a crisp white or pale-blue short-sleeve linen shirt (or a fine cotton polo), perfectly tailored stone, beige or white lightweight linen trousers or smart tailored shorts, woven leather loafers or premium minimalist white sneakers, oversized designer sunglasses and a slim luxury watch — light, airy hot-summer fabrics, masculine and effortlessly sharp, absolutely NO jacket, blazer, or knitwear',
+    female: 'an elegant flowing summer midi dress in white or a soft pastel, OR a breezy linen blouse with high-waisted tailored linen trousers or a flowing skirt, strappy leather sandals or chic espadrilles, oversized designer sunglasses and refined gold jewellery — light, airy hot-summer fabrics, feminine and graceful, absolutely NO jacket, blazer, or knitwear',
     scenes: [
       { place: 'La Croisette, Cannes', vibe: 'palm-lined boulevard along the French Riviera, grand Belle Époque hotel facades, warm late-afternoon Mediterranean sun' },
       { place: 'Boulevard de la Croisette promenade, Cannes', vibe: 'elegant seaside walkway, luxury boutiques, golden hour light off the bay' },
@@ -78,7 +79,8 @@ const RIVIERA_THEMES = {
     ],
   },
   'mediterranean-escape': {
-    styling: 'a flowy lightweight summer dress or relaxed linen co-ord, or an open short-sleeve linen shirt with relaxed shorts, sandals or espadrilles, a straw hat and sunglasses — breathable hot-weather resort wear, NO jacket, blazer, or knitwear',
+    male: 'an open short-sleeve linen shirt over a fine tank or worn buttoned, relaxed linen drawstring trousers or tailored summer shorts, leather sandals or espadrilles, a woven straw fedora and sunglasses — breathable hot-weather resort wear, relaxed masculine vacation ease, NO jacket, blazer, or knitwear',
+    female: 'a flowy lightweight sundress or a relaxed linen co-ord set in warm neutral or pastel tones, strappy flat sandals or espadrilles, a wide-brim straw sun hat and oversized sunglasses, delicate jewellery — breathable hot-weather resort wear, feminine and sun-kissed, NO jacket, blazer, or knitwear',
     scenes: [
       { place: 'a Mediterranean beach club terrace', vibe: 'turquoise sea backdrop, white parasols and rattan loungers, bright sun-drenched holiday light' },
       { place: 'a coastal seaside village, French Riviera', vibe: 'pastel buildings, cobbled lanes down to the water, relaxed vacation glow' },
@@ -86,13 +88,20 @@ const RIVIERA_THEMES = {
     ],
   },
   'yacht-weekend': {
-    styling: 'a short-sleeve navy polo or striped Breton tee, white linen trousers or tailored shorts, boat shoes or espadrilles, sunglasses — crisp hot-summer nautical look, NO jacket, blazer, or knitwear draped anywhere',
+    male: 'a short-sleeve navy polo or striped Breton tee, white linen trousers or tailored shorts, brown leather boat shoes or espadrilles, aviator sunglasses — crisp hot-summer nautical look, NO jacket, blazer, or knitwear',
+    female: 'a striped Breton top or a white off-shoulder linen blouse with white wide-leg trousers or a nautical skirt, espadrilles or strappy flats, gold hoops and oversized sunglasses — chic hot-summer nautical look, NO jacket, blazer, or knitwear',
     // Distinct outfit per product (rotated by product index) so the 3 cards in this
-    // collection don't look like the same look in different colours.
-    outfits: [
-      'a crisp white short-sleeve linen shirt left casually open over a tank, tailored beige linen shorts, leather espadrilles and tortoiseshell sunglasses — relaxed hot-summer yacht style, NO jacket/blazer/knitwear',
+    // collection don't look like the same look in different colours. Each entry is
+    // gendered so men and women get appropriately different garments.
+    maleOutfits: [
+      'a crisp white short-sleeve linen shirt left casually open over a fitted tank, tailored beige linen shorts, leather espadrilles and tortoiseshell sunglasses — relaxed hot-summer yacht style, NO jacket/blazer/knitwear',
       'a navy-and-white striped Breton tee tucked into white tailored trousers, brown leather boat shoes, a woven belt and aviator sunglasses — classic nautical hot-summer look, NO jacket/blazer/knitwear',
       'a soft pastel (sky-blue or coral) short-sleeve polo with stone-coloured chino shorts, white minimalist sneakers and a fine watch — bright breezy hot-summer marina style, NO jacket/blazer/knitwear',
+    ],
+    femaleOutfits: [
+      'a white off-shoulder linen blouse with high-waisted wide-leg cream trousers, strappy leather flats and tortoiseshell sunglasses — relaxed elegant hot-summer yacht style, NO jacket/blazer/knitwear',
+      'a navy-and-white striped Breton top tucked into white tailored shorts, espadrilles, a woven belt and aviator sunglasses — classic nautical hot-summer look, NO jacket/blazer/knitwear',
+      'a soft pastel (sky-blue or coral) sleeveless linen sundress with flat sandals and delicate gold jewellery — bright breezy hot-summer marina style, NO jacket/blazer/knitwear',
     ],
     scenes: [
       { place: 'a luxury yacht marina, Cannes', vibe: 'rows of white super-yachts, glittering harbour water, sophisticated coastal light' },
@@ -101,7 +110,8 @@ const RIVIERA_THEMES = {
     ],
   },
   'weekend-getaway': {
-    styling: 'a light short-sleeve shirt or casual summer shirt dress, or a polo with lightweight chinos or shorts, clean white sneakers, a crossbody or sling accessory — easy hot-weather travel wear, NO jacket, blazer, or knitwear',
+    male: 'a light short-sleeve shirt or a fine polo with lightweight chinos or tailored shorts, clean white leather sneakers, a slim crossbody or sling accessory and sunglasses — easy hot-weather travel wear, relaxed and masculine, NO jacket, blazer, or knitwear',
+    female: 'a casual short-sleeve summer shirt-dress or a light blouse with relaxed linen trousers or a flowy skirt, clean white sneakers or flat sandals, a crossbody bag and sunglasses — easy hot-weather travel wear, relaxed and feminine, NO jacket, blazer, or knitwear',
     scenes: [
       { place: 'a Provençal vineyard terrace near the Riviera', vibe: 'rows of vines, rustic stone villa, dappled warm countryside light' },
       { place: 'a charming Riviera café terrace', vibe: 'wicker bistro chairs, cobbled village square, relaxed sunny morning' },
@@ -109,7 +119,8 @@ const RIVIERA_THEMES = {
     ],
   },
   'business-traveller': {
-    styling: 'smart summer-weight business attire — a crisp short-sleeve or rolled-sleeve Oxford shirt with tailored trousers, or an unstructured lightweight linen blazer worn open over a fine shirt (breathable hot-weather formal only, never heavy wool), clean leather loafers or minimalist sneakers — polished but cool for a Riviera heatwave',
+    male: 'smart summer-weight business attire — a crisp short-sleeve or rolled-sleeve Oxford shirt with sharply tailored trousers, OR an unstructured lightweight linen blazer worn open over a fine shirt (breathable hot-weather formal only, never heavy wool), a slim leather belt, polished leather loafers or refined minimalist sneakers — masculine, polished but cool for a Riviera heatwave',
+    female: 'smart summer-weight business attire — a tailored sleeveless or short-sleeve blouse with high-waisted tailored trousers or a pencil skirt, OR an unstructured lightweight linen blazer worn open over a fine top (breathable hot-weather formal only, never heavy wool), elegant low heels or refined flats, minimal gold jewellery — feminine, polished but cool for a Riviera heatwave',
     scenes: [
       { place: 'the Palais des Festivals conference entrance, Cannes', vibe: 'modern glass-and-steel convention architecture, red-carpet steps, polished daytime light' },
       { place: 'a sleek Riviera business hotel lobby', vibe: 'marble floors, floor-to-ceiling windows onto the bay, sophisticated interior light' },
@@ -119,7 +130,8 @@ const RIVIERA_THEMES = {
 };
 
 const DEFAULT_THEME = {
-  styling: 'elegant, elevated travel attire — sophisticated but not overdressed, business-casual luxe',
+  male: 'elegant, elevated summer travel attire for a man — a light linen shirt with tailored trousers, refined and sophisticated but not overdressed, business-casual luxe, NO heavy jacket or knitwear',
+  female: 'elegant, elevated summer travel attire for a woman — a light blouse or summer dress with refined accessories, sophisticated but not overdressed, business-casual luxe, NO heavy jacket or knitwear',
   scenes: [{ place: 'the French Riviera', vibe: 'Mediterranean coastline, warm golden light, effortless luxury' }],
 };
 
@@ -127,194 +139,204 @@ function themeFor(collectionId) {
   return RIVIERA_THEMES[collectionId] || DEFAULT_THEME;
 }
 
+// Returns the gendered wardrobe pair for a collection. When the theme defines
+// per-product outfit variants (e.g. yacht-weekend), the product index selects a
+// distinct look so the cards in one collection don't repeat the same garment.
+function wardrobeFor(theme, productIdx = 0) {
+  if (theme.maleOutfits && theme.femaleOutfits) {
+    const i = productIdx % theme.maleOutfits.length;
+    return { male: theme.maleOutfits[i], female: theme.femaleOutfits[i % theme.femaleOutfits.length] };
+  }
+  return { male: theme.male, female: theme.female };
+}
+
+// ─── Shared strict instruction blocks ──────────────────────────────────────────
+// Reused verbatim across all three prompt builders so every generated image is held
+// to the same professional standard for identity, anatomy, and gendered wardrobe.
+
+const FACE_IDENTITY_BLOCK = `SUBJECT — FACE & IDENTITY (THE #1 NON-NEGOTIABLE REQUIREMENT — DO NOT FAIL THIS):
+- The face in the OUTPUT must be the EXACT SAME FACE as the real person in Image 1 — not similar, not "inspired by", not an idealized version, but IDENTICAL, as if their real face were photographed directly on location. A viewer who knows this person must instantly recognize them.
+- Reproduce with forensic, pixel-level accuracy EVERY identifying feature: the exact head and skull shape, exact face shape and width, exact jawline and chin, exact cheekbones, exact forehead, exact eye shape, exact eye spacing, exact eye colour, exact eyelids, exact eyebrows (shape, thickness, colour), exact nose (bridge, width, tip, nostrils), exact lips (shape, fullness, colour), exact ears, exact skin tone and undertone, exact skin texture, pores, any freckles, moles, scars, wrinkles, or blemishes, and the exact apparent age.
+- Reproduce facial hair EXACTLY if present (beard, stubble, moustache shape, density, colour) and do not add facial hair if absent.
+- Reproduce hair EXACTLY: same style, same length, same colour and highlights, same parting, same hairline, same texture (straight/wavy/curly), and the same way it falls.
+- ABSOLUTELY DO NOT beautify, slim, smooth, airbrush, lighten or darken, de-age, age, change ethnicity, enlarge eyes, sharpen the jaw, or make the person more conventionally attractive in ANY way. Imperfections are part of their identity — keep them all.
+- This is a real photograph of THIS exact person, NOT a stylized, generated, or "lookalike" face. Treat it as a flawless face transplant that must be indistinguishable from Image 1.
+- If any trade-off is ever required, PRESERVE FACE IDENTITY ABOVE EVERYTHING ELSE — pose, lighting, framing, and composition may flex; the face and identity may NOT.`;
+
+const BODY_ANATOMY_BLOCK = `FULL-BODY ANATOMY & POSE (CRITICAL — THE MOST COMMON FAILURE, GET THIS PERFECT):
+- Render a complete, FULL-LENGTH, head-to-toe human that is ONE single, anatomically flawless, naturally proportioned person. A broken, split, or warped lower body is the most common and most unacceptable failure — you MUST get the entire body anatomically correct.
+- The head, neck, shoulders, torso, waist, hips, both legs, and both feet form ONE continuous, seamlessly connected body. The hips sit directly beneath the torso; the spine is straight and natural; the legs descend naturally from the hips; knees and ankles bend correctly and realistically.
+- The ENTIRE body — head through feet — must face and move in ONE single, consistent direction. Do NOT let the upper body face one way and the lower body another. No twisting, severing, splitting, mirroring, duplicating, detaching, elongating, or offsetting of the torso, hips, or legs.
+- BOTH legs and BOTH feet must be clearly visible, correctly shaped, and planted naturally and believably on the ground in a balanced mid-stride or standing pose. No floating, no feet melting into the ground, no missing, extra, or duplicated legs or feet, no impossible joints.
+- Correct, realistic human proportions head-to-toe: leg length proportional to the torso, natural shoulder width, exactly two arms and two legs, and natural hands with exactly five fingers each. No extra, missing, fused, bent-backwards, or warped limbs or digits.
+- The pose is relaxed, balanced, and physically plausible — the weight distribution is believable and the centre of gravity is correct. The final result must read as a genuine photograph of one whole, coherent person, legs and stride included — never a stitched-together, AI-melted, or distorted figure.`;
+
+function wardrobeBlock(wardrobe) {
+  return `WARDROBE — FIRST detect the subject's apparent gender and body type from Image 1, THEN dress them in the matching outfit below (and ONLY that one). The clothing must fit their real body naturally and realistically:
+- IF THE SUBJECT IS MALE / MASCULINE-PRESENTING: ${wardrobe.male}
+- IF THE SUBJECT IS FEMALE / FEMININE-PRESENTING: ${wardrobe.female}
+Choose exactly one based on the real person in Image 1. The garments must drape and fit like real fabric on a real body — correct sizing, natural folds and seams, no melted, fused, see-through, or impossible clothing. Keep it tasteful, elegant, and weather-appropriate.`;
+}
+
 function buildCollectionPrompt(productName, category, collectionName, locationIdx, collectionId) {
   const theme = themeFor(collectionId);
   const loc = theme.scenes[locationIdx % theme.scenes.length];
-  // Use a distinct outfit per product when the theme defines them, so the cards in a
-  // collection vary in actual clothing — not just colour.
-  const outfit = theme.outfits
-    ? theme.outfits[locationIdx % theme.outfits.length]
-    : theme.styling;
-  return `You are a world-class luxury fashion and travel photographer shooting a premium global campaign for TravelPro. You have two images:
-- Image 1: The traveler (your subject — their face, features, and hair must be reproduced with 100% accuracy)
-- Image 2: A TravelPro "${productName}" — the hero product of this shot
+  // Distinct, gendered outfit per product so the 3 cards in a collection vary in
+  // actual garments — not just colour — and match the subject's real gender.
+  const wardrobe = wardrobeFor(theme, locationIdx);
+  return `ROLE: You are a world-class luxury fashion and travel photographer shooting a premium global advertising campaign for TravelPro, the heritage luggage house. Your work runs as double-page spreads in Condé Nast Traveller, Vogue Travel, and Harper's Bazaar. You are a master of identity-accurate portraiture, anatomy, natural light, and product fidelity.
+
+YOU ARE GIVEN TWO REFERENCE IMAGES:
+- Image 1: The TRAVELER — your real human subject. Their face, identity, hair, and apparent gender MUST be reproduced with 100% accuracy.
+- Image 2: A TravelPro "${productName}" — the hero product, which MUST be reproduced exactly.
+
+ASSIGNMENT: Produce ONE single, jaw-dropping, hyper-realistic editorial travel photograph of the EXACT person from Image 1, on location, styled for the "${collectionName}" moment, with the TravelPro "${productName}" as co-hero. It must look like a genuine high-end campaign photograph that stops the scroll — not an AI render.
 
 SCENE: ${loc.place}
 ATMOSPHERE: ${loc.vibe}
-TIME OF DAY: Bright daytime — golden morning light or warm afternoon sun. No dusk, no night, no dim interiors.
-WEATHER: It is a HOT Cannes summer heatwave. The subject must wear light, breathable warm-weather clothing appropriate for intense summer heat. No jackets, no blazers, no coats, no knitwear, no scarves — only airy summer fabrics.
+TIME OF DAY: Bright daytime — golden morning light or warm afternoon Mediterranean sun. No dusk, no night, no dim interiors.
+WEATHER: A HOT Cannes summer heatwave — the subject wears light, breathable warm-weather clothing only. No jackets, no blazers, no coats, no knitwear, no scarves — only airy summer fabrics.
 
-YOUR MISSION: Create a single, jaw-dropping editorial travel photograph that could run as a double-page spread in Condé Nast Traveller, Vogue Travel, or a TravelPro global campaign. This image must stop the scroll.
+${FACE_IDENTITY_BLOCK}
+- Their expression here: confident, relaxed, and naturally in the moment — but the underlying face and identity stay 100% theirs.
 
-SUBJECT — FACE & IDENTITY (MOST CRITICAL REQUIREMENT — DO NOT FAIL THIS):
-- The face in the OUTPUT must be the EXACT SAME FACE as the person in Image 1 — not similar, not inspired by, but IDENTICAL, as if you cut out their real face and placed it into the scene.
-- Preserve with pixel-perfect, forensic accuracy: exact bone structure, exact face shape and jawline, exact eye shape, exact eye color, exact eyebrows, exact nose shape, exact lips, exact skin tone, exact skin texture, freckles/marks, and exact age.
-- Do NOT beautify, slim, smooth, lighten, age, de-age, or "improve" the face in any way. Do NOT make it more conventionally attractive. Keep every real feature exactly as in Image 1.
-- Same hair — identical style, length, color, parting, and how it falls.
-- If you cannot place the identical face, prioritize face identity over everything else (pose, lighting, composition can flex — the face cannot).
-- This is NOT a stylized or AI-imagined version. It is a photograph of THIS exact real person on location.
-- Their expression: confident, relaxed, naturally in the moment — but the underlying face/identity stays 100% theirs.
+${BODY_ANATOMY_BLOCK}
 
-PRODUCT PLACEMENT:
-- The TravelPro "${productName}" is the CO-HERO of this image — not a prop, not an afterthought
-- Reproduce it exactly: same colorway, same logo placement, same wheel design, same handle, same texture
-- Show it prominently — person is mid-stride rolling it, resting their hand on it casually, or standing alongside it with natural weight
-- The bag should be sharp, lit beautifully, and clearly identifiable as the exact product from Image 2
+${wardrobeBlock(wardrobe)}
+- This specific look must be visibly DIFFERENT from the other looks in this same collection — different garments and silhouette, not the same outfit recoloured. It should complement the bag's colour and suit the "${collectionName}" moment.
+
+PRODUCT FIDELITY — THE BAG IS CO-HERO (NOT A PROP):
+- Reproduce the TravelPro "${productName}" from Image 2 EXACTLY: same colourway, same material and texture, same logo placement, same zips, same handle and telescopic handle, same wheel design, same proportions. No creative reinterpretation, no invented details.
+- Feature it prominently and naturally — the person is mid-stride rolling it, resting a hand on it, or standing alongside it with believable weight and contact (hand actually grips the handle; bag actually rests on the ground).
+- The bag is sharp, beautifully lit, and instantly identifiable as the exact product from Image 2.
 
 POSE & ENERGY:
-- Dynamic, natural, editorial — movement or a moment caught mid-action (mid-stride, looking ahead, glancing back over shoulder)
-- Full-length or confident 3/4 shot — whichever is more cinematic for the scene
-- Body language: effortlessly stylish, like someone who travels this well every time
-- NOT a static passport photo stance — give it life
-
-FULL-BODY ANATOMY (MOST CRITICAL — THE #1 FAILURE TO AVOID):
-- Render a FULL-LENGTH, head-to-toe figure that is ONE single, anatomically perfect, naturally proportioned human. The most common failure is a broken lower body — you MUST get the full body right.
-- The torso, hips, and BOTH legs must be a single continuous body in correct anatomical alignment: the hips sit directly below the torso, the legs descend naturally from the hips, knees and ankles bend correctly, and the SAME walking direction is consistent from head to feet.
-- BOTH feet must be clearly visible, correctly shaped, planted naturally on the ground in a believable mid-stride or standing pose. No floating, no melting into the ground, no missing or duplicated feet.
-- Do NOT split, twist, sever, duplicate, bend backwards, elongate, or offset the torso or legs. The upper and lower halves are unmistakably the same person, seamlessly joined at the waist.
-- Correct realistic proportions head-to-toe: leg length proportional to torso, two arms, two legs, normal hands/fingers/feet/joints. No extra, missing, fused, or warped limbs.
-- The result must read as a real photograph of a whole, coherent person — legs and stride included — not a stitched-together or AI-warped figure.
+- Dynamic, natural, editorial — a moment caught mid-action (mid-stride, looking ahead, glancing back over the shoulder). Effortlessly stylish, like a seasoned luxury traveler. NOT a stiff, static passport stance.
 
 COMPOSITION:
-- Subject slightly off-center — rule of thirds; the location breathes around them
-- Shallow depth of field: subject + bag razor sharp, background beautifully blurred but still recognizable as ${loc.place}
-- Slight low angle (shooting from hip height up) gives an aspirational, editorial feel
-- Wide enough crop to feel like a travel campaign, tight enough that the face reads clearly
+- Full-length figure, subject slightly off-centre on the rule of thirds; the location breathes around them.
+- Shallow depth of field: subject and bag razor-sharp, background beautifully blurred yet clearly recognizable as ${loc.place}.
+- A slight low angle (shooting from hip height upward) for an aspirational, editorial lift. Wide enough to feel like a travel campaign, with the face still reading clearly.
 
 LIGHTING (DAYLIGHT ONLY):
-- Bright, directional natural sunlight — Mediterranean clarity, not flat overcast
-- Golden-hour warmth OR sharp midday Riviera sun with crisp shadows
-- Beautiful specular highlight on the bag's surface showing off its premium finish
-- Natural rim light or catch light on the person's face
+- Bright, directional natural sunlight with Mediterranean clarity — golden-hour warmth or crisp midday Riviera sun with clean shadows.
+- A beautiful specular highlight along the bag's surface showing its premium finish, and a natural catchlight in the subject's eyes.
 
-OUTFIT: ${outfit} — tailored to the "${collectionName}" moment, complementing the bag color. This specific look must be visibly different from the other looks in this collection — different garments and silhouette, not the same outfit recoloured.
+MOOD: Aspirational, luxurious, alive. The kind of traveler people notice when they walk in.
 
-BACKGROUND: ${loc.vibe} — rich environmental detail that places this unmistakably at ${loc.place}. Architecture, landscaping, water, or sky visible and beautiful.
-
-MOOD: Aspirational. Luxurious. The kind of traveler people notice when they walk in.
+RENDER QUALITY: Ultra-high fidelity, photographic realism, shot as if on a full-frame camera with a fast prime lens. Rich colour depth, true-to-life skin, crisp focus on subject and bag, natural film-like tonality. Take the time needed to get identity, anatomy, and product exactly right.
 
 ABSOLUTE PRESERVATION RULES — NEVER VIOLATE:
-1. FACE: Exact same person. Same features, same skin tone, zero alterations. Treat it as a face transplant that must be indistinguishable.
-2. HAIR: Exact same style, color, and texture.
-3. BAG: Exact same product — same color, logo, design details as shown in Image 2. No creative reinterpretation.
-4. PHOTOREALISM: Must look like a real photograph taken on location with a high-end camera. Not CGI, not illustration, not composite.
-5. BODY: One coherent person — upper and lower body aligned and connected, natural proportions, no split/duplicated/warped anatomy.
-6. NO TEXT, watermarks, brand overlays, or graphic elements anywhere in the image.
+1. FACE & IDENTITY: The exact same person as Image 1 — same features, skin tone, marks, and age. Indistinguishable. Zero beautification or alteration.
+2. HAIR & FACIAL HAIR: Exactly as in Image 1 — style, length, colour, texture.
+3. GENDER & WARDROBE: Dress the subject according to their real gender from Image 1, using the matching outfit above. Garments fit and drape like real fabric.
+4. BODY: One whole, coherent, anatomically correct full-length person — upper and lower body aligned, connected, naturally proportioned. No split, duplicated, floating, or warped anatomy.
+5. BAG: The exact product from Image 2 — same colour, logo, and design.
+6. PHOTOREALISM: A real photograph from a high-end camera. Not CGI, illustration, or composite.
+7. NO text, watermarks, brand overlays, captions, or graphic elements anywhere in the image.
 
-Output: One breathtaking, campaign-ready luxury travel photograph.`;
+OUTPUT: One breathtaking, campaign-ready luxury travel photograph of the exact person from Image 1.`;
 }
 
 function buildHeroPrompt(productNames) {
   const bagList = productNames.join(', ');
-  return `You are a world-class luxury travel photographer shooting the hero campaign image for TravelPro's French Riviera collection. You have multiple images:
-- Image 1: The traveler — reproduce their face, features, and hair with 100% exact accuracy
-- Images 2+: TravelPro luggage pieces: ${bagList}
+  const heroWardrobe = {
+    male: 'a crisp white short-sleeve linen shirt or airy fine-cotton summer shirt, perfectly tailored stone or beige lightweight linen trousers (or smart tailored shorts), woven leather loafers or premium minimalist sneakers, oversized designer sunglasses and a fine watch — sharp, effortless, masculine, cool for the heat. NO jacket, blazer, coat, or knitwear.',
+    female: 'an elegant flowing white or pastel summer dress, OR an airy linen blouse with high-waisted tailored linen trousers, strappy leather sandals or chic espadrilles, oversized designer sunglasses and refined gold jewellery — graceful, effortless, feminine, cool for the heat. NO jacket, blazer, coat, or knitwear.',
+  };
+  return `ROLE: You are a world-class luxury travel photographer shooting THE hero campaign image — the single opening image of TravelPro's French Riviera store. This is the most important, most beautiful image of the entire campaign. You are a master of identity-accurate portraiture, anatomy, natural light, and product fidelity.
 
-SCENE: La Croisette, Cannes — the iconic palm-lined seaside boulevard, grand Belle Époque hotel facades (Carlton or Martinez), the brilliant Mediterranean bay sparkling in the background. Unmistakably South of France.
+YOU ARE GIVEN MULTIPLE REFERENCE IMAGES:
+- Image 1: The TRAVELER — your real human subject. Reproduce their face, identity, hair, and apparent gender with 100% exact accuracy.
+- Images 2+: TravelPro luggage pieces to feature: ${bagList}.
 
-TIME OF DAY: Bright mid-morning or early afternoon — crisp Mediterranean sunlight, deep blue sky, long sharp shadows. Pure daylight. No golden hour haze, no dusk, absolutely no night.
-WEATHER: It is a HOT, glorious Cannes summer heatwave. The subject wears light, breathable warm-weather summer clothing only — no jackets, no blazers, no coats, no knitwear.
+ASSIGNMENT: Create the single most beautiful, ultra-high-quality TravelPro Riviera hero photograph imaginable — a full-spread luxury campaign image of the EXACT person from Image 1, visibly happy and joyfully enjoying their dream Riviera vacation, with TravelPro luggage beside them on La Croisette. Breathtaking, premium, aspirational at the highest level, and unmistakably a real photograph.
 
-TASK: Create the single most beautiful, ultra-high-quality TravelPro Riviera hero shot imaginable — a full-spread luxury campaign image of this exact person, visibly happy and joyfully enjoying their dream Riviera vacation, with a TravelPro bag at their side on La Croisette. This is the image the entire store opens with: it must be breathtaking, premium, and aspirational at the highest level.
+SCENE: La Croisette, Cannes — the iconic palm-lined seaside boulevard, grand Belle Époque hotel facades (Carlton or Martinez), the brilliant Mediterranean bay sparkling behind. Unmistakably the South of France.
+TIME OF DAY: Bright mid-morning or early afternoon — crisp Mediterranean sunlight, deep blue sky, clean sharp shadows. Pure daylight, no dusk, absolutely no night.
+WEATHER: A HOT, glorious Cannes summer heatwave — the subject wears light, breathable warm-weather summer clothing only. No jackets, no blazers, no coats, no knitwear.
 
-SUBJECT — FACE & IDENTITY (MOST CRITICAL REQUIREMENT — DO NOT FAIL THIS):
-- The output face must be the EXACT SAME FACE as Image 1 — identical, as if their real face was placed into this scene. Not similar, not idealized — the same person.
-- Preserve with forensic accuracy: exact bone structure, face shape, jawline, eye shape, eye colour, eyebrows, nose, lips, skin tone, skin texture, marks, and age.
-- Do NOT beautify, slim, smooth, lighten, age, or de-age the face. Keep every real feature exactly as in Image 1.
-- Exact same hair — identical style, colour, length, and how it falls.
-- Prioritize face identity above all else — the face cannot deviate, even slightly.
-- They are a real person being photographed in Cannes. Not illustrated. Not stylized. Identical.
-- Expression: genuinely happy and radiant — a warm natural smile, relaxed and clearly enjoying a wonderful summer vacation — while the underlying face stays 100% theirs.
+${FACE_IDENTITY_BLOCK}
+- Their expression here: genuinely happy and radiant — a warm, natural smile, relaxed and clearly enjoying a wonderful summer vacation — while the underlying face and identity stay 100% theirs.
+
+${BODY_ANATOMY_BLOCK}
+
+${wardrobeBlock(heroWardrobe)}
 
 COMPOSITION:
-- Full-length shot — the person commanding the frame, bags arranged naturally at their sides and behind
-- One bag being casually rolled or held; others standing elegantly around them
-- Cinematic ultra-wide crop: La Croisette boulevard, palm trees, hotel facade, and the Mediterranean blue all visible
-- Person slightly off-center, rule of thirds; the iconic Cannes backdrop breathes around them
-- Shoot from slightly below eye level — gives an aspirational, editorial magazine-cover energy
+- Full-length figure commanding the frame, with the luggage arranged naturally at their sides and slightly behind. One bag is casually rolled or held; the others stand elegantly around them.
+- Cinematic ultra-wide crop: La Croisette boulevard, palm trees, hotel facade, and the Mediterranean blue all visible. Person slightly off-centre on the rule of thirds; the iconic Cannes backdrop breathes around them.
+- Shoot from slightly below eye level for aspirational, magazine-cover energy.
 
-FULL-BODY ANATOMY (MOST CRITICAL — THE #1 FAILURE TO AVOID):
-- Render a FULL-LENGTH, head-to-toe figure that is ONE single, anatomically perfect, naturally proportioned human. The most common failure is a broken lower body — you MUST get the full body right.
-- The torso, hips, and BOTH legs must be a single continuous body in correct anatomical alignment: the hips sit directly below the torso, the legs descend naturally from the hips, knees and ankles bend correctly, and the SAME walking direction is consistent from head to feet.
-- BOTH feet must be clearly visible, correctly shaped, planted naturally on the ground in a believable mid-stride or standing pose. No floating, no melting into the ground, no missing or duplicated feet.
-- Do NOT split, twist, sever, duplicate, bend backwards, elongate, or offset the torso or legs. The upper and lower halves are unmistakably the same person, seamlessly joined at the waist.
-- Correct realistic proportions head-to-toe: leg length proportional to torso, two arms, two legs, normal hands/fingers/feet/joints. No extra, missing, fused, or warped limbs.
-- The result must read as a real photograph of a whole, coherent person — legs and stride included — not a stitched-together or AI-warped figure.
+PRODUCT FIDELITY: The TravelPro luggage must be clearly visible, sharp, and faithfully reproduced with the EXACT colours, logos, materials, handles, wheels, and design details from the product images — true co-heroes of the image, positioned beautifully beside the subject, with believable contact and weight.
 
-OUTFIT: Light, breathable hot-summer Riviera wear — a crisp white short-sleeve linen shirt or airy summer top, perfectly tailored stone or beige lightweight trousers or shorts, leather sandals or loafers, oversized designer sunglasses, a fine watch. Sharp, effortless, cool for the heat. NO jacket, blazer, coat, or knitwear.
+LIGHTING: Brilliant Mediterranean daylight — sharp specular highlights on the polished bag surfaces, clean shadows on the pavement, catchlights in the subject's eyes.
 
-BAGS: The TravelPro luggage must be clearly visible, sharp, and faithfully reproduced with exact colors, logos, and design details from the product images — a true co-hero of this image, positioned beautifully beside the subject.
+MOOD: Pure joy and luxury — a person living their best summer vacation on the French Riviera. Warm, happy, aspirational, unforgettable.
 
-LIGHTING: Brilliant Mediterranean daylight — sharp specular highlights on the polished bag surfaces, clean shadows on the pavement, catchlights in the subject's eyes. Render with ultra-high fidelity, crisp focus, rich colour depth, and flawless professional retouching.
+RENDER QUALITY: The highest possible fidelity — photographic realism as if shot on a full-frame camera with a premium prime lens. Crisp focus, rich colour depth, true-to-life skin, flawless natural tonality. Take the time needed to get identity, anatomy, and product exactly right.
 
-MOOD: Pure joy and luxury — a person living their best summer vacation on the French Riviera. Warm, happy, aspirational, and unforgettable. The kind of traveler La Croisette was made for.
+ABSOLUTE PRESERVATION RULES — NEVER VIOLATE:
+1. FACE & IDENTITY: The exact same person as Image 1 — indistinguishable, zero alteration or beautification.
+2. HAIR & FACIAL HAIR: Exactly as in Image 1.
+3. GENDER & WARDROBE: Dress according to the subject's real gender from Image 1, using the matching outfit above.
+4. BODY: One whole, coherent, anatomically correct full-length person — aligned, connected, naturally proportioned. No split, duplicated, floating, or warped anatomy.
+5. ALL BAGS: Exact colours, logos, and designs as the product images.
+6. PHOTOREALISM: A real photograph from a high-end camera, shot on location. Not CGI, illustration, or composite.
+7. NO text, watermarks, captions, or graphic additions.
 
-ABSOLUTE PRESERVATION RULES:
-1. FACE: Zero alteration. Same person, identical features.
-2. HAIR: Identical.
-3. ALL BAGS: Exact colors, logos, and designs as product images.
-4. PHOTOREALISM: Real photograph quality — high-end camera, shot on location.
-5. BODY: One coherent person — upper and lower body aligned and connected, natural proportions, no split/duplicated/warped anatomy.
-6. NO text, watermarks, or graphic additions.
-
-Output: One iconic, campaign-defining hero travel photograph.`;
+OUTPUT: One iconic, campaign-defining hero travel photograph of the exact person from Image 1.`;
 }
 
 function buildGridPrompt(productName, locationIdx, collectionId) {
   const theme = themeFor(collectionId);
   const loc = theme.scenes[(locationIdx + 1) % theme.scenes.length];
-  return `You are a world-class luxury travel photographer shooting a location-hero campaign image for TravelPro. You have two images:
-- Image 1: The traveler — their face and hair must be reproduced with 100% exact accuracy
-- Image 2: A TravelPro "${productName}" — the featured product
+  const wardrobe = wardrobeFor(theme, locationIdx + 1);
+  return `ROLE: You are a world-class luxury travel photographer shooting a location-hero campaign image for TravelPro, the heritage luggage house. Your work runs in premium travel and fashion magazines. You are a master of identity-accurate portraiture, anatomy, natural light, and product fidelity.
+
+YOU ARE GIVEN TWO REFERENCE IMAGES:
+- Image 1: The TRAVELER — your real human subject. Reproduce their face, identity, hair, and apparent gender with 100% exact accuracy.
+- Image 2: A TravelPro "${productName}" — the featured product, reproduced exactly.
+
+ASSIGNMENT: Create a stunning wide editorial travel photograph of the EXACT person from Image 1 where both the person AND the location are heroes — travel-magazine cover meets luxury brand campaign — featuring the TravelPro "${productName}". It must look like a genuine high-end photograph.
 
 SCENE: ${loc.place} — ${loc.vibe}
 TIME OF DAY: Bright daytime — sharp Mediterranean sunlight, rich colours, deep blue sky. No evening, no dusk, no night whatsoever.
-WEATHER: It is a HOT Cannes summer heatwave. The subject must wear light, breathable warm-weather clothing only — no jackets, no blazers, no coats, no knitwear, no scarves.
+WEATHER: A HOT Cannes summer heatwave — the subject wears light, breathable warm-weather clothing only. No jackets, no blazers, no coats, no knitwear, no scarves.
 
-TASK: Create a stunning wide editorial travel photograph where both the person AND the location are heroes. Think travel magazine cover meets luxury brand campaign.
+${FACE_IDENTITY_BLOCK}
+- Their expression here: natural and at ease — a confident stride, hand on the bag, looking ahead or glancing toward camera — while the underlying face and identity stay 100% theirs.
 
-SUBJECT — FACE & IDENTITY (MOST CRITICAL REQUIREMENT — DO NOT FAIL THIS):
-- The output face must be the EXACT SAME FACE as Image 1 — identical, as if their real face was placed into this scene. Not similar, not inspired by — the same person.
-- Preserve with forensic accuracy: exact bone structure, face shape, jawline, eye shape and colour, eyebrows, nose, lips, skin tone, skin texture, marks, and age.
-- Do NOT beautify, slim, smooth, lighten, age, or de-age the face. Keep every real feature exactly as in Image 1.
-- Exact same hair — same style, colour, length, and texture.
-- Prioritize face identity above pose, lighting, and composition. The face cannot deviate.
-- Pose: natural, mid-movement — confident stride, hand on bag, looking ahead or glancing toward camera with ease — but the face/identity stays 100% theirs.
+${BODY_ANATOMY_BLOCK}
 
-PRODUCT:
-- The TravelPro "${productName}" is prominently featured — same exact color, logo, design details as Image 2
-- Person is naturally rolling it, carrying it, or standing beside it
-- Bag is sharp, well-lit, and clearly identifiable
+${wardrobeBlock(wardrobe)}
+
+PRODUCT FIDELITY:
+- The TravelPro "${productName}" is prominently featured and reproduced EXACTLY from Image 2 — same colour, material, logo, zips, handle, wheels, and design details. No reinterpretation.
+- The person naturally rolls it, carries it, or stands beside it with believable contact and weight. The bag is sharp, well-lit, and clearly identifiable.
 
 COMPOSITION — WIDER ENVIRONMENTAL SHOT:
-- Full-length or near-full-length — the person is in their element, the location surrounds them
-- ${loc.place} clearly visible and beautiful — architecture, landscape, sky, or water as the backdrop
-- Slight low angle for editorial lift; subject roughly centered or rule-of-thirds
-- Depth of field: subject + bag sharp, background richly blurred but location still readable
-
-FULL-BODY ANATOMY (MOST CRITICAL — THE #1 FAILURE TO AVOID):
-- Render a FULL-LENGTH, head-to-toe figure that is ONE single, anatomically perfect, naturally proportioned human. The most common failure is a broken lower body — you MUST get the full body right.
-- The torso, hips, and BOTH legs must be a single continuous body in correct anatomical alignment: the hips sit directly below the torso, the legs descend naturally from the hips, knees and ankles bend correctly, and the SAME walking direction is consistent from head to feet.
-- BOTH feet must be clearly visible, correctly shaped, planted naturally on the ground in a believable mid-stride or standing pose. No floating, no melting into the ground, no missing or duplicated feet.
-- Do NOT split, twist, sever, duplicate, bend backwards, elongate, or offset the torso or legs. The upper and lower halves are unmistakably the same person, seamlessly joined at the waist.
-- Correct realistic proportions head-to-toe: leg length proportional to torso, two arms, two legs, normal hands/fingers/feet/joints. No extra, missing, fused, or warped limbs.
-- The result must read as a real photograph of a whole, coherent person — legs and stride included — not a stitched-together or AI-warped figure.
+- Full-length figure, the person in their element with the location surrounding them.
+- ${loc.place} clearly visible and beautiful — architecture, landscape, sky, or water as the backdrop.
+- Slight low angle for editorial lift; subject roughly centred or on the rule of thirds.
+- Depth of field: subject and bag sharp, background richly blurred but the location still readable.
 
 LIGHTING: Brilliant natural daylight — crisp specular on the bag, clean catchlights in the eyes, warm directional Mediterranean sun.
 
-OUTFIT: ${theme.styling}
+MOOD: Confident, effortless, aspirational — someone who travels like this every time.
 
-MOOD: Confident, effortless, aspirational. Someone who travels like this every time.
+RENDER QUALITY: Ultra-high fidelity, photographic realism as if shot on a full-frame camera with a fast prime lens. Crisp focus on subject and bag, rich colour depth, true-to-life skin and natural tonality. Take the time needed to get identity, anatomy, and product exactly right.
 
-ABSOLUTE PRESERVATION RULES:
-1. FACE: Identical to Image 1 — zero changes, zero stylization.
-2. HAIR: Identical style and color.
-3. BAG: Exact same product — same color and design as Image 2.
-4. PHOTOREALISM: Real photograph. Not CGI or illustration.
-5. BODY: One coherent person — upper and lower body aligned and connected, natural proportions, no split/duplicated/warped anatomy.
-6. NO text, watermarks, or overlays.
+ABSOLUTE PRESERVATION RULES — NEVER VIOLATE:
+1. FACE & IDENTITY: The exact same person as Image 1 — indistinguishable, zero alteration or beautification.
+2. HAIR & FACIAL HAIR: Exactly as in Image 1.
+3. GENDER & WARDROBE: Dress according to the subject's real gender from Image 1, using the matching outfit above.
+4. BODY: One whole, coherent, anatomically correct full-length person — aligned, connected, naturally proportioned. No split, duplicated, floating, or warped anatomy.
+5. BAG: The exact product from Image 2 — same colour and design.
+6. PHOTOREALISM: A real photograph from a high-end camera. Not CGI or illustration.
+7. NO text, watermarks, or overlays.
 
-Output: One stunning, wide editorial travel photograph.`;
+OUTPUT: One stunning, wide editorial travel photograph of the exact person from Image 1.`;
 }
 
 // ─── Generate card endpoint ───────────────────────────────────────────────────
@@ -374,7 +396,7 @@ app.post('/api/generate-card', async (req, res) => {
       ];
 
       const r = await fetch(
-        `https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-image:generateContent?key=${GEMINI_API_KEY}`,
+        `https://generativelanguage.googleapis.com/v1beta/models/gemini-3-pro-image:generateContent?key=${GEMINI_API_KEY}`,
         {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
