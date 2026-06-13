@@ -167,11 +167,13 @@ POSE & ENERGY:
 - Body language: effortlessly stylish, like someone who travels this well every time
 - NOT a static passport photo stance — give it life
 
-BODY & ANATOMY (CRITICAL — DO NOT FAIL THIS):
-- The body must be ONE single, anatomically correct, naturally proportioned human. Head, torso, hips, and legs must connect seamlessly and face the SAME consistent direction with a natural, believable posture.
-- The upper body and lower body MUST belong to the same person and be aligned — do NOT split, twist, duplicate, mismatch, or offset the torso and legs. No disconnected, floating, or contradictory limbs.
-- Correct human proportions: realistic arm/leg length, normal number of fingers, hands, feet, and joints. No extra or missing limbs, no warped or bent anatomy.
-- The pose must be physically plausible and read as a real photograph of a whole, coherent person standing or walking naturally.
+FULL-BODY ANATOMY (MOST CRITICAL — THE #1 FAILURE TO AVOID):
+- Render a FULL-LENGTH, head-to-toe figure that is ONE single, anatomically perfect, naturally proportioned human. The most common failure is a broken lower body — you MUST get the full body right.
+- The torso, hips, and BOTH legs must be a single continuous body in correct anatomical alignment: the hips sit directly below the torso, the legs descend naturally from the hips, knees and ankles bend correctly, and the SAME walking direction is consistent from head to feet.
+- BOTH feet must be clearly visible, correctly shaped, planted naturally on the ground in a believable mid-stride or standing pose. No floating, no melting into the ground, no missing or duplicated feet.
+- Do NOT split, twist, sever, duplicate, bend backwards, elongate, or offset the torso or legs. The upper and lower halves are unmistakably the same person, seamlessly joined at the waist.
+- Correct realistic proportions head-to-toe: leg length proportional to torso, two arms, two legs, normal hands/fingers/feet/joints. No extra, missing, fused, or warped limbs.
+- The result must read as a real photograph of a whole, coherent person — legs and stride included — not a stitched-together or AI-warped figure.
 
 COMPOSITION:
 - Subject slightly off-center — rule of thirds; the location breathes around them
@@ -231,11 +233,13 @@ COMPOSITION:
 - Person slightly off-center, rule of thirds; the iconic Cannes backdrop breathes around them
 - Shoot from slightly below eye level — gives an aspirational, editorial magazine-cover energy
 
-BODY & ANATOMY (CRITICAL — DO NOT FAIL THIS):
-- The body must be ONE single, anatomically correct, naturally proportioned human. Head, torso, hips, and legs connect seamlessly and face the SAME consistent direction with a natural posture.
-- The upper body and lower body MUST belong to the same person and be aligned — do NOT split, twist, duplicate, mismatch, or offset the torso and legs. No disconnected, floating, or contradictory limbs.
-- Correct human proportions: realistic arm/leg length, normal hands, fingers, and feet. No extra or missing limbs, no warped anatomy.
-- The full-length pose must be physically plausible and read as a real photograph of one whole, coherent person.
+FULL-BODY ANATOMY (MOST CRITICAL — THE #1 FAILURE TO AVOID):
+- Render a FULL-LENGTH, head-to-toe figure that is ONE single, anatomically perfect, naturally proportioned human. The most common failure is a broken lower body — you MUST get the full body right.
+- The torso, hips, and BOTH legs must be a single continuous body in correct anatomical alignment: the hips sit directly below the torso, the legs descend naturally from the hips, knees and ankles bend correctly, and the SAME walking direction is consistent from head to feet.
+- BOTH feet must be clearly visible, correctly shaped, planted naturally on the ground in a believable mid-stride or standing pose. No floating, no melting into the ground, no missing or duplicated feet.
+- Do NOT split, twist, sever, duplicate, bend backwards, elongate, or offset the torso or legs. The upper and lower halves are unmistakably the same person, seamlessly joined at the waist.
+- Correct realistic proportions head-to-toe: leg length proportional to torso, two arms, two legs, normal hands/fingers/feet/joints. No extra, missing, fused, or warped limbs.
+- The result must read as a real photograph of a whole, coherent person — legs and stride included — not a stitched-together or AI-warped figure.
 
 OUTFIT: Light, breathable hot-summer Riviera wear — a crisp white short-sleeve linen shirt or airy summer top, perfectly tailored stone or beige lightweight trousers or shorts, leather sandals or loafers, oversized designer sunglasses, a fine watch. Sharp, effortless, cool for the heat. NO jacket, blazer, coat, or knitwear.
 
@@ -288,11 +292,13 @@ COMPOSITION — WIDER ENVIRONMENTAL SHOT:
 - Slight low angle for editorial lift; subject roughly centered or rule-of-thirds
 - Depth of field: subject + bag sharp, background richly blurred but location still readable
 
-BODY & ANATOMY (CRITICAL — DO NOT FAIL THIS):
-- The body must be ONE single, anatomically correct, naturally proportioned human. Head, torso, hips, and legs connect seamlessly and face the SAME consistent direction with a natural posture.
-- The upper body and lower body MUST belong to the same person and be aligned — do NOT split, twist, duplicate, mismatch, or offset the torso and legs. No disconnected, floating, or contradictory limbs.
-- Correct human proportions: realistic arm/leg length, normal hands, fingers, and feet. No extra or missing limbs, no warped anatomy.
-- The full-length pose must be physically plausible and read as a real photograph of one whole, coherent person.
+FULL-BODY ANATOMY (MOST CRITICAL — THE #1 FAILURE TO AVOID):
+- Render a FULL-LENGTH, head-to-toe figure that is ONE single, anatomically perfect, naturally proportioned human. The most common failure is a broken lower body — you MUST get the full body right.
+- The torso, hips, and BOTH legs must be a single continuous body in correct anatomical alignment: the hips sit directly below the torso, the legs descend naturally from the hips, knees and ankles bend correctly, and the SAME walking direction is consistent from head to feet.
+- BOTH feet must be clearly visible, correctly shaped, planted naturally on the ground in a believable mid-stride or standing pose. No floating, no melting into the ground, no missing or duplicated feet.
+- Do NOT split, twist, sever, duplicate, bend backwards, elongate, or offset the torso or legs. The upper and lower halves are unmistakably the same person, seamlessly joined at the waist.
+- Correct realistic proportions head-to-toe: leg length proportional to torso, two arms, two legs, normal hands/fingers/feet/joints. No extra, missing, fused, or warped limbs.
+- The result must read as a real photograph of a whole, coherent person — legs and stride included — not a stitched-together or AI-warped figure.
 
 LIGHTING: Brilliant natural daylight — crisp specular on the bag, clean catchlights in the eyes, warm directional Mediterranean sun.
 
