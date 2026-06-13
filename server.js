@@ -87,6 +87,13 @@ const RIVIERA_THEMES = {
   },
   'yacht-weekend': {
     styling: 'a short-sleeve navy polo or striped Breton tee, white linen trousers or tailored shorts, boat shoes or espadrilles, sunglasses — crisp hot-summer nautical look, NO jacket, blazer, or knitwear draped anywhere',
+    // Distinct outfit per product (rotated by product index) so the 3 cards in this
+    // collection don't look like the same look in different colours.
+    outfits: [
+      'a crisp white short-sleeve linen shirt left casually open over a tank, tailored beige linen shorts, leather espadrilles and tortoiseshell sunglasses — relaxed hot-summer yacht style, NO jacket/blazer/knitwear',
+      'a navy-and-white striped Breton tee tucked into white tailored trousers, brown leather boat shoes, a woven belt and aviator sunglasses — classic nautical hot-summer look, NO jacket/blazer/knitwear',
+      'a soft pastel (sky-blue or coral) short-sleeve polo with stone-coloured chino shorts, white minimalist sneakers and a fine watch — bright breezy hot-summer marina style, NO jacket/blazer/knitwear',
+    ],
     scenes: [
       { place: 'a luxury yacht marina, Cannes', vibe: 'rows of white super-yachts, glittering harbour water, sophisticated coastal light' },
       { place: 'the teak deck of a moored yacht', vibe: 'open sea horizon, polished chrome and sail rigging, breezy sunlit leisure' },
@@ -123,6 +130,11 @@ function themeFor(collectionId) {
 function buildCollectionPrompt(productName, category, collectionName, locationIdx, collectionId) {
   const theme = themeFor(collectionId);
   const loc = theme.scenes[locationIdx % theme.scenes.length];
+  // Use a distinct outfit per product when the theme defines them, so the cards in a
+  // collection vary in actual clothing — not just colour.
+  const outfit = theme.outfits
+    ? theme.outfits[locationIdx % theme.outfits.length]
+    : theme.styling;
   return `You are a world-class luxury fashion and travel photographer shooting a premium global campaign for TravelPro. You have two images:
 - Image 1: The traveler (your subject — their face, features, and hair must be reproduced with 100% accuracy)
 - Image 2: A TravelPro "${productName}" — the hero product of this shot
@@ -164,7 +176,7 @@ LIGHTING (DAYLIGHT ONLY):
 - Beautiful specular highlight on the bag's surface showing off its premium finish
 - Natural rim light or catch light on the person's face
 
-OUTFIT: ${theme.styling} — tailored to the "${collectionName}" moment, complementing the bag color.
+OUTFIT: ${outfit} — tailored to the "${collectionName}" moment, complementing the bag color. This specific look must be visibly different from the other looks in this collection — different garments and silhouette, not the same outfit recoloured.
 
 BACKGROUND: ${loc.vibe} — rich environmental detail that places this unmistakably at ${loc.place}. Architecture, landscaping, water, or sky visible and beautiful.
 
