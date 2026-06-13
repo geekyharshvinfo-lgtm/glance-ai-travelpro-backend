@@ -70,7 +70,7 @@ async function toBase64(url) {
 // (rotated by product index) so the 3 products in a collection don't look identical.
 const RIVIERA_THEMES = {
   'cannes-riviera': {
-    styling: 'crisp white linen shirt or blouse, beige tailored chinos or shorts, a lightweight blazer worn open, leather loafers or minimalist sneakers, designer sunglasses and a refined watch',
+    styling: 'crisp white or pastel linen short-sleeve shirt or breezy blouse, lightweight tailored shorts or flowing trousers, leather sandals or minimalist sneakers, designer sunglasses and a refined watch — light, airy hot-summer fabrics, absolutely NO jacket, blazer, or knitwear',
     scenes: [
       { place: 'La Croisette, Cannes', vibe: 'palm-lined boulevard along the French Riviera, grand Belle Époque hotel facades, warm late-afternoon Mediterranean sun' },
       { place: 'Boulevard de la Croisette promenade, Cannes', vibe: 'elegant seaside walkway, luxury boutiques, golden hour light off the bay' },
@@ -78,7 +78,7 @@ const RIVIERA_THEMES = {
     ],
   },
   'mediterranean-escape': {
-    styling: 'a flowy summer dress or relaxed linen co-ord, or a linen shirt with rolled sleeves and relaxed shorts, sandals or espadrilles, a straw hat and sunglasses',
+    styling: 'a flowy lightweight summer dress or relaxed linen co-ord, or an open short-sleeve linen shirt with relaxed shorts, sandals or espadrilles, a straw hat and sunglasses — breathable hot-weather resort wear, NO jacket, blazer, or knitwear',
     scenes: [
       { place: 'a Mediterranean beach club terrace', vibe: 'turquoise sea backdrop, white parasols and rattan loungers, bright sun-drenched holiday light' },
       { place: 'a coastal seaside village, French Riviera', vibe: 'pastel buildings, cobbled lanes down to the water, relaxed vacation glow' },
@@ -86,7 +86,7 @@ const RIVIERA_THEMES = {
     ],
   },
   'yacht-weekend': {
-    styling: 'a navy polo or striped Breton tee, white linen trousers or tailored shorts, a lightweight knit draped over the shoulders, boat shoes or espadrilles, sunglasses',
+    styling: 'a short-sleeve navy polo or striped Breton tee, white linen trousers or tailored shorts, boat shoes or espadrilles, sunglasses — crisp hot-summer nautical look, NO jacket, blazer, or knitwear draped anywhere',
     scenes: [
       { place: 'a luxury yacht marina, Cannes', vibe: 'rows of white super-yachts, glittering harbour water, sophisticated coastal light' },
       { place: 'the teak deck of a moored yacht', vibe: 'open sea horizon, polished chrome and sail rigging, breezy sunlit leisure' },
@@ -94,7 +94,7 @@ const RIVIERA_THEMES = {
     ],
   },
   'weekend-getaway': {
-    styling: 'smart denim and linen combinations or a casual shirt dress, polo and chinos, clean white sneakers, a crossbody or sling accessory',
+    styling: 'a light short-sleeve shirt or casual summer shirt dress, or a polo with lightweight chinos or shorts, clean white sneakers, a crossbody or sling accessory — easy hot-weather travel wear, NO jacket, blazer, or knitwear',
     scenes: [
       { place: 'a Provençal vineyard terrace near the Riviera', vibe: 'rows of vines, rustic stone villa, dappled warm countryside light' },
       { place: 'a charming Riviera café terrace', vibe: 'wicker bistro chairs, cobbled village square, relaxed sunny morning' },
@@ -102,7 +102,7 @@ const RIVIERA_THEMES = {
     ],
   },
   'business-traveller': {
-    styling: 'a smart blazer over a polo or crisp Oxford shirt, tailored trousers, clean leather sneakers or loafers, professional yet lightweight layering',
+    styling: 'smart summer-weight business attire — a crisp short-sleeve or rolled-sleeve Oxford shirt with tailored trousers, or an unstructured lightweight linen blazer worn open over a fine shirt (breathable hot-weather formal only, never heavy wool), clean leather loafers or minimalist sneakers — polished but cool for a Riviera heatwave',
     scenes: [
       { place: 'the Palais des Festivals conference entrance, Cannes', vibe: 'modern glass-and-steel convention architecture, red-carpet steps, polished daytime light' },
       { place: 'a sleek Riviera business hotel lobby', vibe: 'marble floors, floor-to-ceiling windows onto the bay, sophisticated interior light' },
@@ -130,6 +130,7 @@ function buildCollectionPrompt(productName, category, collectionName, locationId
 SCENE: ${loc.place}
 ATMOSPHERE: ${loc.vibe}
 TIME OF DAY: Bright daytime — golden morning light or warm afternoon sun. No dusk, no night, no dim interiors.
+WEATHER: It is a HOT Cannes summer heatwave. The subject must wear light, breathable warm-weather clothing appropriate for intense summer heat. No jackets, no blazers, no coats, no knitwear, no scarves — only airy summer fabrics.
 
 YOUR MISSION: Create a single, jaw-dropping editorial travel photograph that could run as a double-page spread in Condé Nast Traveller, Vogue Travel, or a TravelPro global campaign. This image must stop the scroll.
 
@@ -188,14 +189,15 @@ function buildHeroPrompt(productNames) {
 SCENE: La Croisette, Cannes — the iconic palm-lined seaside boulevard, grand Belle Époque hotel facades (Carlton or Martinez), the brilliant Mediterranean bay sparkling in the background. Unmistakably South of France.
 
 TIME OF DAY: Bright mid-morning or early afternoon — crisp Mediterranean sunlight, deep blue sky, long sharp shadows. Pure daylight. No golden hour haze, no dusk, absolutely no night.
+WEATHER: It is a HOT, glorious Cannes summer heatwave. The subject wears light, breathable warm-weather summer clothing only — no jackets, no blazers, no coats, no knitwear.
 
-TASK: Create the definitive TravelPro Riviera hero shot — a full-spread campaign image of this exact person with the TravelPro luggage set arranged naturally around them on La Croisette.
+TASK: Create the single most beautiful, ultra-high-quality TravelPro Riviera hero shot imaginable — a full-spread luxury campaign image of this exact person, visibly happy and joyfully enjoying their dream Riviera vacation, with a TravelPro bag at their side on La Croisette. This is the image the entire store opens with: it must be breathtaking, premium, and aspirational at the highest level.
 
 SUBJECT — FACE & IDENTITY (CRITICAL):
 - Reproduce this person's face with 100% accuracy: exact bone structure, eye shape, eye color, nose, lips, skin tone, skin texture
 - Exact same hair — identical style, color, length, how it falls
 - They are a real person being photographed in Cannes. Not illustrated. Not stylized. Identical.
-- Expression: confident arrival, slight natural smile or composed gaze — owning the moment
+- Expression: genuinely happy and radiant — a warm natural smile, relaxed and clearly enjoying a wonderful summer vacation
 
 COMPOSITION:
 - Full-length shot — the person commanding the frame, bags arranged naturally at their sides and behind
@@ -204,13 +206,13 @@ COMPOSITION:
 - Person slightly off-center, rule of thirds; the iconic Cannes backdrop breathes around them
 - Shoot from slightly below eye level — gives an aspirational, editorial magazine-cover energy
 
-OUTFIT: Crisp white linen shirt, perfectly tailored beige or stone trousers, lightweight blazer worn open, leather loafers, oversized designer sunglasses, a fine watch. Sharp, effortless, Riviera-ready.
+OUTFIT: Light, breathable hot-summer Riviera wear — a crisp white short-sleeve linen shirt or airy summer top, perfectly tailored stone or beige lightweight trousers or shorts, leather sandals or loafers, oversized designer sunglasses, a fine watch. Sharp, effortless, cool for the heat. NO jacket, blazer, coat, or knitwear.
 
-BAGS: All TravelPro pieces must be clearly visible, sharp, and faithfully reproduced with their exact colors, logos, and design details from the product images. They are co-heroes of this image.
+BAGS: The TravelPro luggage must be clearly visible, sharp, and faithfully reproduced with exact colors, logos, and design details from the product images — a true co-hero of this image, positioned beautifully beside the subject.
 
-LIGHTING: Brilliant Mediterranean daylight — sharp specular highlights on the polished bag surfaces, clean shadows on the pavement, catchlights in the subject's eyes.
+LIGHTING: Brilliant Mediterranean daylight — sharp specular highlights on the polished bag surfaces, clean shadows on the pavement, catchlights in the subject's eyes. Render with ultra-high fidelity, crisp focus, rich colour depth, and flawless professional retouching.
 
-MOOD: An extraordinary arrival. The kind of traveler La Croisette was made for.
+MOOD: Pure joy and luxury — a person living their best summer vacation on the French Riviera. Warm, happy, aspirational, and unforgettable. The kind of traveler La Croisette was made for.
 
 ABSOLUTE PRESERVATION RULES:
 1. FACE: Zero alteration. Same person, identical features.
@@ -231,6 +233,7 @@ function buildGridPrompt(productName, locationIdx, collectionId) {
 
 SCENE: ${loc.place} — ${loc.vibe}
 TIME OF DAY: Bright daytime — sharp Mediterranean sunlight, rich colours, deep blue sky. No evening, no dusk, no night whatsoever.
+WEATHER: It is a HOT Cannes summer heatwave. The subject must wear light, breathable warm-weather clothing only — no jackets, no blazers, no coats, no knitwear, no scarves.
 
 TASK: Create a stunning wide editorial travel photograph where both the person AND the location are heroes. Think travel magazine cover meets luxury brand campaign.
 
