@@ -70,8 +70,16 @@ async function toBase64(url) {
 // (rotated by product index) so the 3 products in a collection don't look identical.
 const RIVIERA_THEMES = {
   'cannes-riviera': {
-    male: 'a crisp white or pale-blue short-sleeve linen shirt (or a fine cotton polo), perfectly tailored stone, beige or white lightweight linen trousers or smart tailored shorts, woven leather loafers or premium minimalist white sneakers, oversized designer sunglasses and a slim luxury watch — light, airy hot-summer fabrics, masculine and effortlessly sharp, absolutely NO jacket, blazer, or knitwear',
-    female: 'an elegant flowing summer midi dress in white or a soft pastel, OR a breezy linen blouse with high-waisted tailored linen trousers or a flowing skirt, strappy leather sandals or chic espadrilles, oversized designer sunglasses and refined gold jewellery — light, airy hot-summer fabrics, feminine and graceful, absolutely NO jacket, blazer, or knitwear',
+    maleOutfits: [
+      'a crisp white short-sleeve linen shirt, perfectly tailored beige linen trousers, tan woven-leather loafers, tortoiseshell sunglasses and a slim luxury watch — bright, airy, effortlessly sharp hot-summer style, NO jacket/blazer/knitwear',
+      'a pale-blue fine-cotton short-sleeve polo, crisp white tailored shorts, premium minimalist white sneakers, silver watch and clean sunglasses — fresh, breezy, masculine hot-summer style, NO jacket/blazer/knitwear',
+      'a sand/taupe short-sleeve camp-collar shirt with a subtle texture, olive lightweight chino trousers, brown leather sandals and aviator sunglasses — warm, relaxed, refined hot-summer style, NO jacket/blazer/knitwear',
+    ],
+    femaleOutfits: [
+      'an elegant flowing white summer midi dress, strappy tan leather sandals, oversized sunglasses and delicate gold jewellery — graceful, airy, hot-summer style, NO jacket/blazer/knitwear',
+      'a breezy pastel (blush or sky-blue) linen blouse with high-waisted cream tailored linen trousers, chic espadrilles and gold hoops — feminine, fresh hot-summer style, NO jacket/blazer/knitwear',
+      'a soft coral or terracotta sleeveless linen sundress with a flowing skirt, flat leather sandals and refined sunglasses — warm, elegant hot-summer style, NO jacket/blazer/knitwear',
+    ],
     scenes: [
       { place: 'La Croisette, Cannes', vibe: 'palm-lined boulevard along the French Riviera, grand Belle Époque hotel facades, warm late-afternoon Mediterranean sun' },
       { place: 'Boulevard de la Croisette promenade, Cannes', vibe: 'elegant seaside walkway, luxury boutiques, golden hour light off the bay' },
@@ -79,8 +87,16 @@ const RIVIERA_THEMES = {
     ],
   },
   'mediterranean-escape': {
-    male: 'an open short-sleeve linen shirt over a fine tank or worn buttoned, relaxed linen drawstring trousers or tailored summer shorts, leather sandals or espadrilles, a woven straw fedora and sunglasses — breathable hot-weather resort wear, relaxed masculine vacation ease, NO jacket, blazer, or knitwear',
-    female: 'a flowy lightweight sundress or a relaxed linen co-ord set in warm neutral or pastel tones, strappy flat sandals or espadrilles, a wide-brim straw sun hat and oversized sunglasses, delicate jewellery — breathable hot-weather resort wear, feminine and sun-kissed, NO jacket, blazer, or knitwear',
+    maleOutfits: [
+      'a white short-sleeve linen camp-collar shirt worn open over a fine grey tank, beige linen drawstring trousers, leather sandals and a woven straw fedora — breezy, relaxed resort style, NO jacket/blazer/knitwear',
+      'a soft sage-green short-sleeve linen shirt, stone tailored summer shorts, tan espadrilles and round sunglasses — sun-kissed, easy hot-weather vacation style, NO jacket/blazer/knitwear',
+      'a terracotta or burnt-orange short-sleeve shirt with cream linen shorts, leather slides and a fine watch — warm, vibrant Mediterranean resort style, NO jacket/blazer/knitwear',
+    ],
+    femaleOutfits: [
+      'a flowy white lightweight sundress, strappy flat sandals, a wide-brim straw sun hat and delicate jewellery — airy, sun-kissed resort style, NO jacket/blazer/knitwear',
+      'a relaxed pastel-blue linen co-ord set (short-sleeve top and wide trousers), espadrilles and oversized sunglasses — fresh, feminine resort style, NO jacket/blazer/knitwear',
+      'a warm coral or sand flowing maxi dress with flat leather sandals, gold hoops and a straw tote vibe — graceful, holiday resort style, NO jacket/blazer/knitwear',
+    ],
     scenes: [
       { place: 'a Mediterranean beach club terrace', vibe: 'turquoise sea backdrop, white parasols and rattan loungers, bright sun-drenched holiday light' },
       { place: 'a coastal seaside village, French Riviera', vibe: 'pastel buildings, cobbled lanes down to the water, relaxed vacation glow' },
@@ -110,8 +126,16 @@ const RIVIERA_THEMES = {
     ],
   },
   'weekend-getaway': {
-    male: 'a light short-sleeve shirt or a fine polo with lightweight chinos or tailored shorts, clean white leather sneakers, a slim crossbody or sling accessory and sunglasses — easy hot-weather travel wear, relaxed and masculine, NO jacket, blazer, or knitwear',
-    female: 'a casual short-sleeve summer shirt-dress or a light blouse with relaxed linen trousers or a flowy skirt, clean white sneakers or flat sandals, a crossbody bag and sunglasses — easy hot-weather travel wear, relaxed and feminine, NO jacket, blazer, or knitwear',
+    maleOutfits: [
+      'a light chambray short-sleeve shirt, beige lightweight chinos, clean white leather sneakers and sunglasses — easy, relaxed weekend travel style, NO jacket/blazer/knitwear',
+      'a fine white or mint short-sleeve polo, khaki tailored shorts, tan loafers and a slim crossbody sling — fresh, casual hot-weather travel style, NO jacket/blazer/knitwear',
+      'a soft olive or rust short-sleeve linen shirt with stone chino shorts, leather sandals and aviator sunglasses — warm, easygoing weekend style, NO jacket/blazer/knitwear',
+    ],
+    femaleOutfits: [
+      'a casual white short-sleeve summer shirt-dress, clean white sneakers, a crossbody bag and sunglasses — easy, relaxed weekend travel style, NO jacket/blazer/knitwear',
+      'a light pastel blouse with relaxed beige linen trousers, flat leather sandals and gold studs — fresh, feminine hot-weather travel style, NO jacket/blazer/knitwear',
+      'a warm rust or sand flowy summer skirt with a fitted short-sleeve top, espadrilles and a crossbody bag — relaxed, sunny weekend style, NO jacket/blazer/knitwear',
+    ],
     scenes: [
       { place: 'a Provençal vineyard terrace near the Riviera', vibe: 'rows of vines, rustic stone villa, dappled warm countryside light' },
       { place: 'a charming Riviera café terrace', vibe: 'wicker bistro chairs, cobbled village square, relaxed sunny morning' },
@@ -119,8 +143,16 @@ const RIVIERA_THEMES = {
     ],
   },
   'business-traveller': {
-    male: 'smart summer-weight business attire — a crisp short-sleeve or rolled-sleeve Oxford shirt with sharply tailored trousers, OR an unstructured lightweight linen blazer worn open over a fine shirt (breathable hot-weather formal only, never heavy wool), a slim leather belt, polished leather loafers or refined minimalist sneakers — masculine, polished but cool for a Riviera heatwave',
-    female: 'smart summer-weight business attire — a tailored sleeveless or short-sleeve blouse with high-waisted tailored trousers or a pencil skirt, OR an unstructured lightweight linen blazer worn open over a fine top (breathable hot-weather formal only, never heavy wool), elegant low heels or refined flats, minimal gold jewellery — feminine, polished but cool for a Riviera heatwave',
+    maleOutfits: [
+      'a crisp white rolled-sleeve Oxford shirt, sharply tailored navy trousers, a slim leather belt and polished brown leather loafers — smart, masculine, summer-weight formal (NO blazer/jacket/outerwear/knitwear), cool for a Riviera heatwave',
+      'a light-blue short-sleeve fine-cotton dress shirt, tailored stone-grey trousers and refined minimalist leather sneakers — clean, polished hot-weather business style (NO blazer/jacket/outerwear/knitwear)',
+      'a soft sand or taupe short-sleeve linen dress shirt, tailored charcoal trousers, leather loafers and a fine watch — elevated, breathable summer business style (NO blazer/jacket/outerwear/knitwear)',
+    ],
+    femaleOutfits: [
+      'a tailored white sleeveless blouse with high-waisted navy tailored trousers, elegant nude low heels and minimal gold jewellery — sharp, feminine summer-weight formal (NO blazer/jacket/outerwear/knitwear)',
+      'a light-blue short-sleeve silk blouse with a tailored stone pencil skirt and refined pointed flats — polished, cool hot-weather business style (NO blazer/jacket/outerwear/knitwear)',
+      'a soft beige sleeveless top tucked into tailored charcoal wide-leg trousers, elegant flats and delicate jewellery — elevated, breathable summer business style (NO blazer/jacket/outerwear/knitwear)',
+    ],
     scenes: [
       { place: 'the Palais des Festivals conference entrance, Cannes', vibe: 'modern glass-and-steel convention architecture, red-carpet steps, polished daytime light' },
       { place: 'a sleek Riviera business hotel lobby', vibe: 'marble floors, floor-to-ceiling windows onto the bay, sophisticated interior light' },
